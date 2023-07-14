@@ -1,0 +1,8 @@
+ID	TITLE	AUTHOR	PUBLISH YEAR	STATUS	U_ID	NAME	NUMBER	DATE
+1	Java	Rajesh	2022	Available	-	-	-	-
+2	Economic	Raj	2022	Available	-	-	-	-
+3	OOP	Suresh	2002	Available	-	-	-	-
+123	efg	Abc	2021	Available	-	-	-	-
+1	Java	Vraj	2022	Available	-	-	-	-
+1	Cplusplus	Ram	2021	Available	-	-	-	-
+1	Java Basics	Jay	2023	Available	-	-	-	-
