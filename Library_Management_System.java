@@ -15,8 +15,7 @@ class User
 	private String name;
 	private String id1;
 	private String no;
-	// ArrayList<String> b=new ArrayList<String>();
-	// ArrayList<String> d=new ArrayList<String>();
+	
 	 public User() {
 	    }
 
@@ -75,7 +74,7 @@ class Book extends User {
         this.author = author;
         this.publishYear = publishYear;
         this.status = status;
-        // this.date = date;
+        
     }
 
     public String getDate() {
@@ -333,8 +332,7 @@ class LibraryService extends LibrarySystem {
 
         boolean chk = false;
         String date = "00-00-0000";
-        // System.out.print("Enter the date(dd-mm-yyyy): ");
-        // d1 = sc.nextLine();
+        
         
         do
         {
@@ -350,7 +348,7 @@ class LibraryService extends LibrarySystem {
                 }
             }
             String arr1[]=date.split("-");
-            // System.out.println("Cnt: " + cnt);
+           
             
             if(cnt != 2 || arr1[0].length() != 2 || arr1[1].length() != 2 || arr1[2].length() != 4 || arr1[0].compareTo("31") > 0 || arr1[1].compareTo("12") > 0 || arr1[2].compareTo("1000") < 0)
             {
@@ -401,17 +399,14 @@ class LibraryService extends LibrarySystem {
         {
             FileWriter file_w = new FileWriter("lms.txt");
             file_w.write("ID\t"+"TITLE\t"+"AUTHOR\t"+"PUBLISH YEAR\t"+"STATUS\t"+"U_ID\t"+"NAME\t"+"NUMBER\t"+"DATE\n");
-            // "ID","TITLE","AUTHOR","PUBLISH YEAR","STATUS","U_ID","NAME","NUMBER","DATE"
+            
             for (Book bk:books){
                 file_w.write(bk.getId() + "\t" + bk.getTitle() + "\t" + bk.getAuthor() + "\t" +
              bk.getPublishYear() + "\t" + bk.getStatus() + "\t" + bk.getId1() + "\t"
              + bk.getname() + "\t" + bk.getNo() + "\t" + bk.getDate() + "\n");
             }
 
-            // file_w.write(book.getId() + "\t" + book.getTitle() + "\t" + book.getAuthor() + "\t" +
-            //  book.getPublishYear() + "\t" + book.getStatus() + "\t" + book.getId1() + "\t"
-            //  + book.getname() + "\t" + book.getNo() + "\t" + book.getDate() + "\n");
-
+     
             file_w.close();
             
         }
@@ -462,7 +457,7 @@ class LibraryService extends LibrarySystem {
                     p1=true;
                     gg = 1;
                     
-                    // book.setStatus("Available");
+                 
                     break;
                 }
             }
@@ -488,8 +483,7 @@ class LibraryService extends LibrarySystem {
         }
         boolean chk = false;
         String d1 = "00-00-0000";
-        // System.out.print("Enter the date(dd-mm-yyyy): ");
-        // d1 = sc.nextLine();
+   
         
         do
         {
@@ -505,7 +499,7 @@ class LibraryService extends LibrarySystem {
                 }
             }
             String arr1[]=d1.split("-");
-            // System.out.println("Cnt: " + cnt);
+
             
             if(cnt != 2 || arr1[0].length() != 2 || arr1[1].length() != 2 || arr1[2].length() != 4 || arr1[0].compareTo("31") > 0 || arr1[1].compareTo("12") > 0 || arr1[2].compareTo("1000") < 0)
             {
@@ -554,16 +548,12 @@ class LibraryService extends LibrarySystem {
             FileWriter file_w = new FileWriter("lms.txt");
             file_w.write("ID\t"+"TITLE\t"+"AUTHOR\t"+"PUBLISH YEAR\t"+"STATUS\t"+"U_ID\t"+"NAME\t"+"NUMBER\t"+"DATE\n");
 
-            // "ID","TITLE","AUTHOR","PUBLISH YEAR","STATUS","U_ID","NAME","NUMBER","DATE"
+     
             for (Book bk:books){
                 file_w.write(bk.getId() + "\t" + bk.getTitle() + "\t" + bk.getAuthor() + "\t" +
              bk.getPublishYear() + "\t" + bk.getStatus() + "\t" + bk.getId1() + "\t"
              + bk.getname() + "\t" + bk.getNo() + "\t" + bk.getDate() + "\n");
             }
-
-            // file_w.write(book.getId() + "\t" + book.getTitle() + "\t" + book.getAuthor() + "\t" +
-            //  book.getPublishYear() + "\t" + book.getStatus() + "\t" + book.getId1() + "\t"
-            //  + book.getname() + "\t" + book.getNo() + "\t" + book.getDate() + "\n");
 
             file_w.close();
             
