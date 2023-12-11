@@ -366,7 +366,7 @@ class LibraryService extends LibrarySystem {
        {
             System.out.print("Enter your phone number: ");
             number = sc.nextLine();
-            if(number.length() == 9)
+            if(number.length() == 10)
             {
                 kk = false;
             }
